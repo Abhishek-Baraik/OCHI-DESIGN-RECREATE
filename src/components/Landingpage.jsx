@@ -5,7 +5,7 @@ function Landingpage() {
 
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-0.3" className='w-full h-screen bg-zinc-900 pt-10'>
-      <div className='text-structure ml-20 mt-8'>
+      <div className='text-structure ml-20 mt-28 '>
         {["We create", "eye opening", "Presentations"].map((item, index) => {
           return <div className='masker flex'>
             {index === 1 && (
