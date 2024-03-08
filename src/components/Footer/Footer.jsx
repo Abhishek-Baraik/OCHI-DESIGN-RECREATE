@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Footer.css'
 function Footer() {
 
     return (
@@ -21,21 +21,21 @@ function Footer() {
             </div>
             <div className='w-1/2 h-full'>
                 <h1 className='text-[8vw] font-[foundersGrotesk] leading-none '>PRESENTATIONS</h1>
-                <div className="dets flex flex-col mt-10 font-[NeueMontreal]">
+                <div className="dets flex flex-col mt-10 font-[NeueMontreal] w-24">
                     {["S:","Instagram","Facebook","Behance","LinkedIn"].map((item,index)=>(
-                        <a className={`underline cursor-pointer ${index === 0 && "mb-5 cursor-default no-underline"}`}>{item}</a>
+                        <a className={`footerlinks cursor-pointer ${index === 0 && "mb-5 cursor-default no-underline"}`}>{item}</a>
                     ))}
                 </div>
                 <div>
                     <div className='flex gap-96'>
                     <div className='flex flex-col mt-10 font-[NeueMontreal]'>
                         {["L:","202-1965 W 4th Ave","Vancouver, Canada","30 Chukarina St","Lviv, Ukraine","E:","hello@ochi.design"].map((item,index)=>(
-                            <a className={`underline cursor-pointer ${index === 0 && 'mb-5 no-underline cursor-default'} ${index === 4 && 'mb-10'} ${index === 5 && 'mb-5 no-underline cursor-default'}`}>{item}</a>
+                            <a className={`footerlinks cursor-pointer ${index === 0 && 'mb-5 no-underline cursor-default'} ${index === 4 && 'mb-10'} ${index === 5 && 'mb-5 no-underline cursor-default'}`}>{item}</a>
                         ))}
                     </div>
                     <div className='flex flex-col mt-10 font-[NeueMontreal]'>
                     {["M:","Home","Services","Our work","About us","Insights","Contact us"].map((item,index)=>(
-                        <a className={`underline ${index === 0 && "mb-5 no-underline"}`}>{item}</a>
+                        <a className={`footerlinks cursor-pointer ${index === 0 && "mb-5 no-underline cursor-default"}`}>{item}</a>
                     ))}
                     </div>
                     </div>

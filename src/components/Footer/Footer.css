@@ -1,0 +1,17 @@
+.footerlinks{
+    position: relative;
+}
+
+.footerlinks::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(254, 254, 254);
+    height: 1px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+.footerlinks:hover::after{
+    width: 100%;
+}

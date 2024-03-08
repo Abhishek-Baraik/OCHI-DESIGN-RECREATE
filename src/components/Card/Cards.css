@@ -1,0 +1,27 @@
+.cardbtn{
+    transition: 0.2s;
+    overflow: hidden;
+    background: none;
+    color: white;
+}
+.cardbtn:hover{
+    color: #000;
+    z-index: 0;
+}
+
+.cardbtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ffffff;
+    z-index: -1;
+    transition: 0.5s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.cardbtn:hover::before{
+    height: 180%;
+}

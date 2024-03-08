@@ -7,9 +7,9 @@ function Landingpage() {
     <div data-scroll data-scroll-section data-scroll-speed="-0.3" className='w-full h-screen bg-zinc-900 pt-10'>
       <div className='text-structure ml-20 mt-8'>
         {["We create", "eye opening", "Presentations"].map((item, index) => {
-          return <div className='masker flex '>
+          return <div className='masker flex'>
             {index === 1 && (
-              <motion.div initial={{width:0}} animate={{width: "8vw"}} transition={{ease:[0.76, 0, 0.24, 1], duration:1}} className='mr-[1vw] w-[8vw] rounded-md h-[5.5vw] top-[0.7vw] relative bg-green-400'>
+              <motion.div initial={{width:0}} animate={{width: "8vw"}} transition={{ease:[0.76, 0, 0.24, 1], duration:1}} className='mr-[1vw] w-[8vw] rounded-md h-[5.5vw] top-[0.7vw] relative bg-green-400 bg-[url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg")] bg-cover'>
               </motion.div>
             )}
             <h1 className='uppercase text-9xl leading-[6.3vw] tracking-normal font-semibold font-["FoundersGrotesk"]'>{item}</h1>

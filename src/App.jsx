@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Landingpage from './components/Landingpage'
 import Marquee from './components/Marquee'
 import About from './components/About'
 import Eyex from './components/Eyex'
 import Featured from './components/Featured'
-import Cards from './components/Cards'
-import Footer from './components/Footer'
+import Cards from './components/Card/Cards'
+import Footer from './components/Footer/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
